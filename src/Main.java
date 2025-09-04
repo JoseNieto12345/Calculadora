@@ -6,6 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int opcion;
+        int numero1,numero2;
 
         do{
             System.out.println("Calculadora");
@@ -20,6 +21,10 @@ public class Main {
             switch (opcion){
                 case 1:
                     System.out.println("Suma");
+                    System.out.println("Ingresa el primer numero:");
+                    numero1 = sc.nextInt();
+                    System.out.println("Ingresa el segundo numero:");
+                    numero2 = sc.nextInt();
                     Suma suma = new Suma();
 
 
@@ -27,17 +32,30 @@ public class Main {
                 case 2:
                     System.out.println("Resta");
 
-                    Resta resta = new Resta();
-
+                    System.out.println("Ingresa el primer numero:");
+                    numero1 = sc.nextInt();
+                    System.out.println("Ingresa el segundo numero:");
+                    numero2 = sc.nextInt();
+                    Resta resta = new Resta(numero1,numero2);
+                    resta.getResultado();
 
                     break;
                 case 3:
                     System.out.println("Multiplicacion");
+                    System.out.println("Ingresa el primer numero:");
+                    numero1 = sc.nextInt();
+                    System.out.println("Ingresa el segundo numero:");
+                    numero2 = sc.nextInt();
                     Multiplicacion multiplicacion = new Multiplicacion();
+                    multiplicacion.operar(numero1,numero2);
 
                     break;
                 case 4:
                     System.out.println("Division");
+                    System.out.println("Ingresa el primer numero:");
+                    numero1 = sc.nextInt();
+                    System.out.println("Ingresa el segundo numero:");
+                    numero2 = sc.nextInt();
                     Division division = new Division();
 
 

@@ -1,5 +1,3 @@
-package org.example;
-
 public class Resta {
     // Atributos
     private int numero1;
