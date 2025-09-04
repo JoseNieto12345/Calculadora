@@ -25,7 +25,8 @@ public class Main {
                     numero1 = sc.nextInt();
                     System.out.println("Ingresa el segundo numero:");
                     numero2 = sc.nextInt();
-                    Suma suma = new Suma();
+                    Suma suma = new Suma(numero1,numero2);
+                    suma.result();
 
 
                     break;
