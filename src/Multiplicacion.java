@@ -10,3 +10,5 @@ public class Multiplicacion {
     private double getResultado() { return resultado; }
     private void setResultado(double resultado) { this.resultado = resultado; }
 }
+
+
