@@ -1,20 +1,21 @@
 public class Suma{
-    private int num1;
-    private int num2;
-    public Suma(int num1, int num2){
-        this.num1=num2;
-        this.num2=num1;
+    private int numero1;
+    private int numero2;
+
+    public Suma(int numero1, int numero2){
+        this.numero1=numero2;
+        this.numero2=numero1;
 
     }
     public int result(){
-        return num1+num2;
+        return numero1+numero2;
 
     }
     public int getNum1(){
-        return num2;
+        return numero1;
     }
     public int getNum2(){
-        return num2;
+        return numero2;
     }
 
 }
