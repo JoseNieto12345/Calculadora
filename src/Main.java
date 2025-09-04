@@ -26,8 +26,8 @@ public class Main {
                     System.out.println("Ingresa el segundo numero:");
                     numero2 = sc.nextInt();
                     Suma suma = new Suma(numero1,numero2);
-                    suma.result();
-
+                    
+                    System.out.println("Resultado: "+suma.result());
 
                     break;
                 case 2:
@@ -38,7 +38,7 @@ public class Main {
                     System.out.println("Ingresa el segundo numero:");
                     numero2 = sc.nextInt();
                     Resta resta = new Resta(numero1,numero2);
-                    resta.getResultado();
+                    System.out.println("Resultado: "+resta.getResultado());
 
                     break;
                 case 3:
@@ -48,8 +48,7 @@ public class Main {
                     System.out.println("Ingresa el segundo numero:");
                     numero2 = sc.nextInt();
                     Multiplicacion multiplicacion = new Multiplicacion();
-                    multiplicacion.operar(numero1,numero2);
-
+                    System.out.println("Resultado: "+multiplicacion.operar(numero1,numero2));
                     break;
                 case 4:
                     System.out.println("Division");
@@ -57,7 +56,10 @@ public class Main {
                     numero1 = sc.nextInt();
                     System.out.println("Ingresa el segundo numero:");
                     numero2 = sc.nextInt();
-                    Division division = new Division();
+                    Division Division = new Division();
+                    Division.Division(numero1,numero2);
+                    System.out.println("Resultado: "+Division.getResultado());
+
 
 
                     break;

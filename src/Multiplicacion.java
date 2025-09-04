@@ -7,9 +7,8 @@ public class Multiplicacion {
         return getResultado();
     }
 
-    private double getResultado() { return resultado; }
-
     private void setResultado(double resultado) { this.resultado = resultado; }
+    private double getResultado() { return resultado; }
 }
 
 
